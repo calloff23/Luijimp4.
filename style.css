@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', sans-serif;
+  text-align: center;
+}
+
+h1.title {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 20px #ff0099, 0 0 30px #ff3300;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #ffe4e1;
+  margin-top: 10px;
+}
+
+/* First Page: Black Background and Rainbow Button */
+.black-bg {
+  background-color: #000000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rainbow-button {
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: white;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.rainbow-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+}
+
+/* Second Page: Birthday Background */
+.birthday-bg {
+  background: linear-gradient(to bottom, #ffd1dc, #ffe4e1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.confetti {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  animation: sparkle 1.5s infinite ease-in-out;
+}
+
+.cake-image {
+  margin-top: 20px;
+  width: 200px;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+/* Animations */
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
